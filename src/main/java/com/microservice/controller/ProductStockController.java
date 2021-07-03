@@ -45,13 +45,4 @@ public class ProductStockController {
 
 	    return productStockBean;
 	}
-	
-	@GetMapping("/getData/{id}")
-	public ProductStock getProduct(@PathVariable Long id) {
-		
-		return productStockRepository.getById(id);
-		
-	}
-	
-
 }
